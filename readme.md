@@ -72,6 +72,7 @@ Here is an in-depth breakdown of our example regular expression (not by me, from
 
 /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/
 
+<pre>
 ^\s*                #Line start, match any whitespaces at the beginning if any.
 
 (?:\+?(\d{1,3}))?   #GROUP 1: The country code. Optional.
@@ -91,7 +92,7 @@ Here is an in-depth breakdown of our example regular expression (not by me, from
 (?: *x(\d+))?       #Group 5: The Extension number. Optional.
 
 \s*$                #Match any ending whitespaces if any and the end of string.
-
+</pre>
 
 ## Author
 My name is Mat, and I like to code
